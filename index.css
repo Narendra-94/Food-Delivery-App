@@ -46,10 +46,14 @@ body {
 }
 
 .crousel {
-  background-color: #8e2020;
-  padding: 2rem 20%;
+  background-color: #023433;
+  gap: 2rem;
+  padding: 2rem 10%;
   display: flex;
   overflow-x: scroll;
+}
+.crousel-image {
+  width: 300px;
 }
 
 .crousel-image:hover {

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Icon = () => {
   return (
     <div>
@@ -20,18 +22,22 @@ const Header = () => {
       <h1></h1>
       <div className="nav-items">
         <ul>
-          <a href="">
+          <Link to="/">
             <li>Home</li>
-          </a>
-          <a href="">
+          </Link>
+
+          <Link to="/about">
             <li>About Us</li>
-          </a>
-          <a href="">
+          </Link>
+
+          <Link to="/contact">
             <li>Contact Us</li>
-          </a>
-          <a href="">
+          </Link>
+
+          <Link to="/cart">
             <li>Cart</li>
-          </a>
+          </Link>
+
           <li>
             <button className="login-button">Login</button>
           </li>
