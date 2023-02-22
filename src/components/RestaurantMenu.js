@@ -12,19 +12,21 @@ const RestaurantMenu = () => {
   return !restaurantMenu ? (
     <Shimmer />
   ) : (
-    <div>
+    <div className="bg-[#3C4852] text-white py-8 mb-5">
       <div>
-        <h1>Menu:{resId}</h1>
-        <h2>Restaurant name: {restaurantMenu.name}</h2>
-        <img src={IMG_CDN_URL + restaurantMenu.cloudinaryImageId} />
-      </div>
-      <div>
-        <h1>Menu</h1>
-        <ul>
-          {Object.values(restaurantMenu?.menu?.items).map((item) => (
-            <li key={item.id}>{item.name}</li>
-          ))}
-        </ul>
+        <div className="m-auto w-4/5 flex justify-evenly items-center gap-5">
+          <h1>Menu:{resId}</h1>
+          <h2>Restaurant name: {restaurantMenu.name}</h2>
+          <img src={IMG_CDN_URL + restaurantMenu.cloudinaryImageId} />
+        </div>
+        <div>
+          <h1>Menu</h1>
+          <ul>
+            {Object.values(restaurantMenu?.menu?.items).map((item) => (
+              <li key={item.id}>{item.name}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
